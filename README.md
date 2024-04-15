@@ -1,6 +1,11 @@
 # ShootTheDoor
+
+fork of [SPT mod nektonick/Tarkov_ShootTheDoor](https://github.com/nektonick/Tarkov_ShootTheDoor) for SIT (Stay in Tarkov).
+
+
 ## Build
-To build this project change value of `SptFolder` in `ShootTheDoor.csproj` from `C:\Games\SPT_3_7_1` to your path to SPT folder
+To build this project change value of `SitClientInstall` in `ShootTheDoor.csproj` from `C:\Games\SPT_3_7_1` to your path to SPT folder
+
 
 ## Description
 Like BackdoorBandit but with more customization!
@@ -11,10 +16,12 @@ Also metal doors should take more shoots than wooden doors.
 Like in real life.
 
 ## Install 
-Unzip archive to your SPT folder.
-(client-side DLL file goes into %SPT%/BepInEx/plugins, server-side nektonick-lockpick_ammo folder goes into %SPT%/user/mods)
+Unzip archive to your SIT folder.
+
+client-side DLL file goes into %SIT%/BepInEx/plugins
 
 ## Usage
+
 - Take your gun.
 - Shoot to the door (or car door, or safe, or even door with keycard access)
     - Aim for the lock for more damage.
@@ -27,17 +34,20 @@ Unzip archive to your SPT folder.
         - Try to create your custom lockpick ammo for AKM or Mosin
 
 ## New features
+
 - Lockpick ammo
     - You can add new ammo with high damage agains objects sold by traders. See examples in config.json
         - Build-in config.json checking on start of the server! No more runtime erros because of negative damage value!
     - Also added new options in BepInEx config menu (F12)
 
 ## TODO
+
 - Kick locked doors make damage to you and door
 - Lock door back after unlocking by key
 - Penetration make sense
 
 ## Config
+
 - You can change some values in BepInEx config menu (F12):
     - HP - More HP - more shoots to break the lock
         - ObjectHP - Same for doors, containers and car doors
@@ -55,6 +65,10 @@ Unzip archive to your SPT folder.
     - Lockpick ammo - configure base damage for different tiers of new lockpick ammo
 
 ## Credits
-Original mod: 
+
+SPT Mod:
+- github: https://github.com/nektonick/Tarkov_ShootTheDoor
+
+Original mod:
 - github - https://github.com/dvize/BackdoorBandit
 - SPT - https://hub.sp-tarkov.com/files/file/1154-backdoor-bandit-bb/#overview

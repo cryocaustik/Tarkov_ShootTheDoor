@@ -11,7 +11,7 @@ using VersionChecker;
 namespace DoorBreach
 {
     [BepInPlugin("com.nektonick.ShootTheDoor", "nektonick.ShootTheDoor", DoorBreachPlugin.PluginVarsion)]
-    [BepInDependency("com.spt-aki.core", "3.7.1")]
+    // [BepInDependency("com.spt-aki.core", "3.7.1")]
     public class DoorBreachPlugin : BaseUnityPlugin
     {
         public const String PluginVarsion = "1.3.0";
@@ -45,7 +45,7 @@ namespace DoorBreach
         public static int interactiveLayer;
         private void Awake()
         {
-            CheckEftVersion();
+            // CheckEftVersion();
 
             ObjectHP = Config.Bind("1. HP", "ObjectHP", 200F);
 

@@ -100,7 +100,7 @@ namespace ShootTheDoor
 
 
         [PatchPostfix]
-        public static void PatchPostFix(DamageInfo damageInfo, GStruct357 shotID)
+        public static void PatchPostFix(DamageInfo damageInfo, ShotId shotID)
         {
             try
             {
